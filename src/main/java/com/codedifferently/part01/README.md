@@ -8,7 +8,7 @@
 
 
 ### **Objective:**
-* Write a program which prompts the user to input his/her name.
+* Write a program which prompts the user to input his/her/they name.
 * The program should greet users whose names are 'Hakim' and 'Rasheeda'.
 
 
