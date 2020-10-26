@@ -9,7 +9,7 @@ public class TooHighTooLow {
         int userResponse;
 
         do {
-            System.out.println("Guess A Number Between 0 & 50 ");
+            System.out.println("Guess A Number Between 1 & 50 ");
             userResponse = parseInt(System.console().readLine());
 
             if (userResponse < randomNumber) System.out.println("You Guessed Too Low, Guess Again!");
