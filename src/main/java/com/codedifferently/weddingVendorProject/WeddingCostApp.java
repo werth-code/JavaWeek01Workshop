@@ -12,10 +12,7 @@ public class WeddingCostApp {
         System.out.println("What Type Of Vendor? (i.e Photographer)  ");
         String vendorType = System.console().readLine();
 
-        System.out.println("What % Of Your Budget Are You Spending On This Vendor? (i.e 10)  ");
-        int vendorCost = parseInt(System.console().readLine());
-
-        WeddingVendor vendor = new WeddingVendor(totalBudget, vendorName, vendorType, vendorCost);
+        WeddingVendor vendor = new WeddingVendor(totalBudget, vendorName, vendorType);
         int vendorCostCalc = vendor.vendorCost();
 
         System.out.printf("This is my photographer: %s %n", vendor.nameOfVendor);
