@@ -1,19 +1,28 @@
 package com.codedifferently.weddingVendorProject;
+import static java.lang.Integer.parseInt;
 
 public class WeddingCostApp {
     public static void main(String[] args) {
+        System.out.println("What Is Your Total Wedding Budget?  ");
+        int totalBudget = parseInt(System.console().readLine());
 
-        WeddingVendor vendor = new WeddingVendor("Werth Photography", "Photographer", 12);
+        System.out.println("What Is Your Vendors Name?  ");
+        String vendorName = System.console().readLine();
+
+        System.out.println("What Type Of Vendor? (i.e Photographer)  ");
+        String vendorType = System.console().readLine();
+
+        System.out.println("What % Of Your Budget Are You Spending On This Vendor? (i.e 10)  ");
+        int vendorCost = parseInt(System.console().readLine());
+
+        WeddingVendor vendor = new WeddingVendor(totalBudget, vendorName, vendorType, vendorCost);
+        int vendorCostCalc = vendor.vendorCost();
+
         System.out.printf("This is my photographer: %s %n", vendor.nameOfVendor);
-
-        vendor.setBudget(40000);
-        int totalBudget = vendor.getBudget();
-        int vendorCost = vendor.vendorCost();
-
         System.out.printf("Total Budget: $%d.%n%s Costs $%d%n",
                          totalBudget,
                          vendor.nameOfVendor,
-                         vendorCost);
+                         vendorCostCalc);
 
     }
 }

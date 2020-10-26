@@ -6,7 +6,8 @@ public class WeddingVendor {
     String typeOfVendor; //The type, like photo, video etc.
     int percentOfBudget; //The % of total wedding budget this vendor costs.
 
-    public WeddingVendor(String nameOfVendor, String vendorType, int percentOfBudget) {
+    public WeddingVendor(int totalBudget, String nameOfVendor, String vendorType, int percentOfBudget) {
+        this.totalBudget = totalBudget;
         this.nameOfVendor = nameOfVendor;
         this.typeOfVendor = vendorType;
         this.percentOfBudget = percentOfBudget;
